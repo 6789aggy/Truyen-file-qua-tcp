@@ -34,6 +34,18 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 -Lưu file tự động vào thư mục chỉ định trên Server.
 
--Hỗ trợ nhiều client đồng thời (server đa luồng).
+🛠️ 2. Công nghệ sử dụng
 
--Giao diện đồ họa (GUI nhẹ) giúp người dùng thao tác chọn/gửi file dễ dàng.
+Ngôn ngữ lập trình: Java
+
+Thư viện:
+
+java.net (Socket, ServerSocket)
+
+java.io (File I/O, DataInputStream, DataOutputStream)
+
+Công cụ phát triển: Eclipse IDE
+
+Hệ điều hành: Windows 10
+
+JDK: Java SE
