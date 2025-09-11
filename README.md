@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   TRUYỀN FILE QUA TCP
+   NETWORK PROGRAMMING
 </h2>
 <div align="center">
     <p align="center">
@@ -14,15 +14,12 @@
     </p>
 
 [![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
-[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa/khoa-cong-nghe-thong-tin)
+[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
-
 
 </div>
 
 ## 📖 1. Giới thiệu
+Trong thời đại công nghệ thông tin phát triển mạnh mẽ, nhu cầu trao đổi và chia sẻ dữ liệu giữa các máy tính ngày càng phổ biến. Một trong những phương thức quan trọng và được sử dụng rộng rãi là truyền file qua giao thức TCP (Transmission Control Protocol).
 
-Đề tài “Truyền file qua TCP” nhằm xây dựng ứng dụng Client - Server cho phép gửi và nhận tập tin qua mạng bằng giao thức TCP. Hệ thống đảm bảo dữ liệu được truyền tải đầy đủ, chính xác và tin cậy.
-
-Ứng dụng giúp sinh viên nắm vững kỹ năng lập trình socket trong Java, đồng thời có thể mở rộng thêm các tính năng như hiển thị tiến trình truyền file và thông báo trạng thái kết quả.
-
+TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn vẹn và đúng thứ tự dữ liệu trong quá trình truyền. Nhờ đó, việc truyền file qua TCP có thể áp dụng cho nhiều hệ thống thực tế như: dịch vụ FTP, ứng dụng chat, hệ thống lưu trữ dữ liệu phân tán, hay các phần mềm hỗ trợ tải xuống.
