@@ -25,9 +25,15 @@ Trong thời đại công nghệ thông tin phát triển mạnh mẽ, nhu cầu
 TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn vẹn và đúng thứ tự dữ liệu trong quá trình truyền. Nhờ đó, việc truyền file qua TCP có thể áp dụng cho nhiều hệ thống thực tế như: dịch vụ FTP, ứng dụng chat, hệ thống lưu trữ dữ liệu phân tán, hay các phần mềm hỗ trợ tải xuống.
 
 🔑 Các chức năng chính của hệ thống:
+
 -Kết nối Client – Server qua TCP Socket.
+
 -Truyền và nhận file giữa các máy trong mạng LAN/Internet.
+
 -Hiển thị tiến trình truyền file (log hoặc thanh tiến trình).
+
 -Lưu file tự động vào thư mục chỉ định trên Server.
+
 -Hỗ trợ nhiều client đồng thời (server đa luồng).
+
 -Giao diện đồ họa (GUI nhẹ) giúp người dùng thao tác chọn/gửi file dễ dàng.
