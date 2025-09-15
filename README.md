@@ -55,22 +55,24 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 
 <p align="center">
-  <img src="docs/Server.png" alt="Ảnh 1" width="800"/>
+  <img src="docs/Server.png" alt="Ảnh 1" width="500"/>
 </p>
 
 <p align="center">
   <em>Hình 1: Giao diện Server  </em>
 </p>
 
+
 <p align="center">
-  <img src="docs/ClientA.png" alt="Ảnh 2" width="800"/>
+  <img src="docs/ClientA.png" alt="Ảnh 2" width="500"/>
 </p>
 
 <p align="center">
   <em>Hình 2: Giao diện Client A  </em>
 </p><p align="center">
 
-  <img src="docs/ClientB.png" alt="Ảnh 3" width="800"/>
+
+  <img src="docs/ClientB.png" alt="Ảnh 3" width="500"/>
 </p>
 
 <p align="center">
