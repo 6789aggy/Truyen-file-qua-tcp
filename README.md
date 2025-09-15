@@ -67,14 +67,14 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 </p>
 
 <p align="center">
-  <em>Hình 1: Giao diện Client A  </em>
+  <em>Hình 2: Giao diện Client A  </em>
 </p><p align="center">
 
   <img src="docs/ClientB.png" alt="Ảnh 3" width="800"/>
 </p>
 
 <p align="center">
-  <em>Hình 1: Giao diện Client B  </em>
+  <em>Hình 3: Giao diện Client B  </em>
 </p>
 
 ## 📝 4. Các bước cài đặt
