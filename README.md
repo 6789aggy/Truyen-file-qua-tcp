@@ -30,7 +30,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 -Truyền và nhận file giữa các client.
 
--Hiển thị tiến trình truyền file (log hoặc thanh tiến trình).
+-Hiển thị tiến trình truyền và nhận file .
 
 -Lưu file tự động vào thư mục chỉ định.
 
