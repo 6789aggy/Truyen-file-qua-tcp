@@ -49,3 +49,15 @@ Công cụ phát triển: Eclipse IDE
 Hệ điều hành: Windows 10
 
 JDK: Java SE
+
+
+## 🚀 3. Hình ảnh các chức năng
+
+
+## 📝 4. Các bước cài đặt
+
+
+
+© 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
+
+---
