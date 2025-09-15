@@ -110,14 +110,14 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 ## 📝 4. Các bước cài đặt
 
-**1 Chuẩn bị môi trường**
+**Bước 1: Chuẩn bị môi trường**
 
 **Cài Java JDK**.
 
 java -version
 javac -version
 
-**2 Tạo Project**
+**Bước 2: Tạo Project**
 
 Tạo một project Java.
 
@@ -131,7 +131,7 @@ ClientA.java
 
 ClientB.java
 
-**3 Gõ code**
+**Bước 3: Gõ code**
 
 Copy code Server.java.
 
@@ -141,7 +141,7 @@ Copy code ClientB.java.
 
  Sau đó Build Project để IDE biên dịch.
 
-**4 Chạy chương trình**
+**Bước 4: Chạy chương trình**
 
 Thứ tự chạy:
 
@@ -165,7 +165,7 @@ Port: 4000 (hoặc số khác bạn set).
 
 -Chạy ClientB (tương tự ClientA).
 
-**5 Gửi file**
+**Bước 5: Gửi file**
 
 Trên ClientA:
 
@@ -179,7 +179,7 @@ Trên ClientA:
 
 -Ngược lại, nếu gửi từ ClientB thì ClientA sẽ nhận được file.
 
-**6 Kết quả mong đợi**
+**Kết quả**
 
 Server log:
 
