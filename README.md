@@ -24,7 +24,7 @@ Trong thời đại công nghệ thông tin phát triển mạnh mẽ, nhu cầu
 
 TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn vẹn và đúng thứ tự dữ liệu trong quá trình truyền. Nhờ đó, việc truyền file qua TCP có thể áp dụng cho nhiều hệ thống thực tế như: dịch vụ FTP, ứng dụng chat, hệ thống lưu trữ dữ liệu phân tán, hay các phần mềm hỗ trợ tải xuống.
 
-🔑 Các chức năng chính của hệ thống:
+🔑 **Các chức năng chính của hệ thống**:
 
 -Kết nối Client – Server qua TCP Socket.
 
@@ -36,19 +36,19 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 ## 🛠️ 2. Công nghệ sử dụng
 
-Ngôn ngữ lập trình: Java
+**Ngôn ngữ lập trình**: Java
 
-Thư viện:
+**Thư viện**:
 
-java.net (Socket, ServerSocket)
+-java.net (Socket, ServerSocket)
 
-java.io (File I/O, DataInputStream, DataOutputStream)
+-java.io (File I/O, DataInputStream, DataOutputStream)
 
-Công cụ phát triển: Eclipse IDE
+**Công cụ phát triển**: Eclipse IDE
 
-Hệ điều hành: Windows 10
+**Hệ điều hành**: Windows 10
 
-JDK: Java SE
+**JDK**: Java SE
 
 
 ## 🚀 3. Hình ảnh các chức năng
