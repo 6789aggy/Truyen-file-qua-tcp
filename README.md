@@ -87,18 +87,18 @@ p align="center">
   <em>Hình 4: Giao diện khi Server đã chạy và các Client đã kết nối  </em>
 </p>
 
-p align="center">
+<p align="center">
   <img src="docs/ChoseFile.png" alt="Ảnh 5" width="500"/>
 </p>
 <p align="center">
-  <em>Hình 5: Giao diện Server  </em>
+  <em>Hình 5: Giao diện Khi chọn File  </em>
 </p>
 
-p align="center">
+<p align="center">
   <img src="docs/Received.png" alt="Ảnh 6" width="500"/>
 </p>
 <p align="center">
-  <em>Hình 6: Giao diện Server  </em>
+  <em>Hình 6: Giao diện khi gửi File  </em>
 </p>
 
 ## 📝 4. Các bước cài đặt
