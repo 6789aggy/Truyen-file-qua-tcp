@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.net.*;
-import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Server extends JFrame {
     private JTextArea logArea;
@@ -14,11 +14,11 @@ public class Server extends JFrame {
     private Thread serverThread;
     private volatile boolean running = false;
 
-    // Danh sách client
-    private final CopyOnWriteArrayList<Socket> clients = new CopyOnWriteArrayList<>();
+    // Map socket -> tên client
+    private final ConcurrentHashMap<Socket, String> clientNames = new ConcurrentHashMap<>();
 
     public Server() {
-        setTitle("TCP File Server Relay");
+        setTitle("TCP Server");
         setSize(500, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -63,10 +63,7 @@ public class Server extends JFrame {
 
                 while (running) {
                     Socket socket = serverSocket.accept();
-                    clients.add(socket);
-                    log("Client kết nối: " + socket.getInetAddress());
-
-                    new Thread(() -> handleClient(socket)).start();
+                    new Thread(() -> initClient(socket)).start();
                 }
             } catch (IOException ex) {
                 log("Lỗi: " + ex.getMessage());
@@ -88,10 +85,10 @@ public class Server extends JFrame {
             if (serverSocket != null && !serverSocket.isClosed()) {
                 serverSocket.close();
             }
-            for (Socket s : clients) {
+            for (Socket s : clientNames.keySet()) {
                 s.close();
             }
-            clients.clear();
+            clientNames.clear();
         } catch (IOException ignored) {}
 
         startButton.setEnabled(true);
@@ -101,20 +98,34 @@ public class Server extends JFrame {
         log("Server đã dừng");
     }
 
-    private void handleClient(Socket socket) {
-        try (DataInputStream dis = new DataInputStream(socket.getInputStream())) {
+    private void initClient(Socket socket) {
+        try {
+            DataInputStream dis = new DataInputStream(socket.getInputStream());
+            String clientName = dis.readUTF();
+            clientNames.put(socket, clientName);
+
+            log(clientName + " đã kết nối");
+
+            handleClient(socket, dis);
+        } catch (IOException e) {
+            log("Không thể khởi tạo client: " + e.getMessage());
+            try { socket.close(); } catch (IOException ignored) {}
+        }
+    }
+
+    private void handleClient(Socket socket, DataInputStream dis) {
+        try {
             while (true) {
                 String fileName = dis.readUTF();
                 long fileSize = dis.readLong();
 
-                log("Nhận file: " + fileName + " (" + fileSize + " bytes) từ " + socket.getInetAddress());
+                String senderName = clientNames.get(socket);
+                log(senderName + " gửi file: " + fileName + " (" + fileSize + " bytes)");
 
-                // Đọc toàn bộ file vào bộ nhớ
                 byte[] fileData = new byte[(int) fileSize];
                 dis.readFully(fileData);
 
-                // Relay cho các client khác
-                for (Socket s : clients) {
+                for (Socket s : clientNames.keySet()) {
                     if (s != socket && !s.isClosed()) {
                         try {
                             DataOutputStream dos = new DataOutputStream(s.getOutputStream());
@@ -122,16 +133,19 @@ public class Server extends JFrame {
                             dos.writeLong(fileSize);
                             dos.write(fileData);
                             dos.flush();
-                            log("→ Đã gửi file tới " + s.getInetAddress());
+
+                            String receiverName = clientNames.get(s);
+                            log("✔ " + senderName + " đã gửi file cho " + receiverName + " thành công");
                         } catch (IOException e) {
-                            log("Lỗi gửi tới client: " + e.getMessage());
+                            log("Lỗi gửi file tới client: " + e.getMessage());
                         }
                     }
                 }
             }
         } catch (IOException e) {
-            log("Client ngắt kết nối: " + socket.getInetAddress());
-            clients.remove(socket);
+            String clientName = clientNames.get(socket);
+            log(clientName + " ngắt kết nối");
+            clientNames.remove(socket);
         }
     }
 

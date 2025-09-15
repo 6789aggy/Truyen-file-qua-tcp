@@ -14,11 +14,10 @@ public class ClientA extends JFrame {
     private DataInputStream dis;
     private File selectedFile;
 
-    // Thư mục lưu file cho Client A
-    private final File saveDir = new File("ClientA_Files");
+    private final File saveDir = new File("Files_ClientA");
 
     public ClientA() {
-        setTitle("TCP File Client A");
+        setTitle("Client A");
         setSize(500, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -58,6 +57,10 @@ public class ClientA extends JFrame {
             socket = new Socket(ipField.getText().trim(), Integer.parseInt(portField.getText().trim()));
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
+
+            dos.writeUTF("Client A");
+            dos.flush();
+
             log("Kết nối thành công tới server!");
 
             new Thread(this::listenForFiles).start();
@@ -70,7 +73,9 @@ public class ClientA extends JFrame {
         JFileChooser chooser = new JFileChooser();
         if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
             selectedFile = chooser.getSelectedFile();
-            log("Đã chọn file: " + selectedFile.getName());
+            log("Đã chọn file: " + selectedFile.getName() +
+                " (" + selectedFile.length() + " bytes ~ " +
+                String.format("%.2f", selectedFile.length() / (1024.0 * 1024.0)) + " MB)");
         }
     }
 
@@ -89,7 +94,7 @@ public class ClientA extends JFrame {
                 dos.write(buffer, 0, read);
             }
             dos.flush();
-            log("Đã gửi file: " + selectedFile.getName());
+            log("Đã gửi file: " + selectedFile.getName() + "đến Clinet B");
         } catch (IOException e) {
             log("Lỗi gửi file: " + e.getMessage());
         }
@@ -112,7 +117,10 @@ public class ClientA extends JFrame {
                         remaining -= read;
                     }
                 }
-                log("Đã nhận file: " + fileName + " (" + fileSize + " bytes)");
+
+                log("Đã nhận file từ Client B: " + fileName +
+                    " (" + fileSize + " bytes ~ " +
+                    String.format("%.2f", fileSize / (1024.0 * 1024.0)) + " MB)");
             }
         } catch (IOException e) {
             log("Ngắt kết nối khỏi server: " + e.getMessage());
