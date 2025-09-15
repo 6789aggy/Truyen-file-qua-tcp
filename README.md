@@ -34,7 +34,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 -Lưu file tự động vào thư mục chỉ định trên Server.
 
-🛠️ 2. Công nghệ sử dụng
+## 🛠️ 2. Công nghệ sử dụng
 
 Ngôn ngữ lập trình: Java
 
