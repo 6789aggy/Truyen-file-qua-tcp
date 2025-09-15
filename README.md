@@ -26,13 +26,13 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 🔑 **Các chức năng chính của hệ thống**:
 
--Kết nối Client – Server qua TCP Socket.
+-Kết nối Client – Server - Client qua TCP Socket.
 
--Truyền và nhận file giữa các máy trong mạng LAN/Internet.
+-Truyền và nhận file giữa các client.
 
 -Hiển thị tiến trình truyền file (log hoặc thanh tiến trình).
 
--Lưu file tự động vào thư mục chỉ định trên Server.
+-Lưu file tự động vào thư mục chỉ định.
 
 ## 🛠️ 2. Công nghệ sử dụng
 
