@@ -26,7 +26,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 🔑 **Các chức năng chính của hệ thống**:
 
--Kết nối Client – Server - Client qua TCP Socket.
+-Kết nối Client – Server qua TCP Socket.
 
 -Truyền và nhận file giữa các client.
 
@@ -57,7 +57,6 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 <p align="center">
   <img src="docs/Server.png" alt="Ảnh 1" width="500"/>
 </p>
-
 <p align="center">
   <em>Hình 1: Giao diện Server  </em>
 </p>
@@ -66,7 +65,6 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 <p align="center">
   <img src="docs/ClientA.png" alt="Ảnh 2" width="500"/>
 </p>
-
 <p align="center">
   <em>Hình 2: Giao diện Client A  </em>
 </p><p align="center">
@@ -74,7 +72,6 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
   <img src="docs/ClientB.png" alt="Ảnh 3" width="500"/>
 </p>
-
 <p align="center">
   <em>Hình 3: Giao diện Client B  </em>
 </p>
