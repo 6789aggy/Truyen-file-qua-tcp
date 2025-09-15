@@ -101,6 +101,13 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
   <em>Hình 6: Giao diện khi gửi File  </em>
 </p>
 
+<p align="center">
+  <img src="docs/StopServer.png" alt="Ảnh 1" width="500"/>
+</p>
+<p align="center">
+  <em>Hình 7: Giao diện khi dừng Server  </em>
+</p>
+
 ## 📝 4. Các bước cài đặt
 
 
