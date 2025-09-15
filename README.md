@@ -114,9 +114,9 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 **Cài Java JDK**.
 
-java -version
+-java -version
 
-javac -version
+-javac -version
 
 **Bước 2: Tạo Project**
 
