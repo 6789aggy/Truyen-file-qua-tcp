@@ -63,14 +63,14 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 </p>
 
 <p align="center">
-  <img src="docs/image-1.png" alt="Ảnh 1" width="800"/>
+  <img src="docs/image-1.png" alt="Ảnh 2" width="800"/>
 </p>
 
 <p align="center">
   <em>Hình 1: Giao diện Client A  </em>
 </p><p align="center">
 
-  <img src="docs/image-2.png" alt="Ảnh 1" width="800"/>
+  <img src="docs/image-2.png" alt="Ảnh 3" width="800"/>
 </p>
 
 <p align="center">
