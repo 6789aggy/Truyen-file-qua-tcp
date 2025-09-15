@@ -80,7 +80,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
   <em>Hình 3: Giao diện Client B  </em>
 </p>
 
-p align="center">
+<p align="center">
   <img src="docs/Connect.png.png" alt="Ảnh 4" width="500"/>
 </p>
 <p align="center">
