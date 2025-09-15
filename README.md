@@ -110,85 +110,59 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 ## 📝 4. Các bước cài đặt
 
-**Bước 1: Chuẩn bị môi trường**
+#### Bước 1: Chuẩn bị môi trường
+1. **Kiểm tra Java**: Mở terminal/command prompt và chạy:
+   ```bash
+   java -version
+   javac -version
+   ```
+   Đảm bảo cả hai lệnh đều hiển thị phiên bản Java 8 trở lên.
 
-**Cài Java JDK**.
+2. **Tải mã nguồn**: Sao chép thư mục `Truyen-file-qua-tcp` chứa các file:
+   - `Server.java`
+   - `ClientA.java`
+   - `ClientB.java`
 
--java -version
+#### Bước 2: Biên dịch mã nguồn
+1. **Mở terminal** và điều hướng đến thư mục chứa mã nguồn
+2. **Biên dịch các file Java**:
+   ```bash
+   javac Truyen-file-qua-tcp/*.java
+   ```
+   Hoặc biên dịch từng file riêng lẻ:
+   ```bash
+   javac Truyen-file-qua-tcp/Server.java
+   javac Truyen-file-qua-tcp/ClientA.java
+   javac Truyen-file-qua-tcp/ClientB.java
+   ```
 
--javac -version
+3. **Kiểm tra kết quả**: Nếu biên dịch thành công, sẽ tạo ra các file `.class` tương ứng.
 
-**Bước 2: Tạo Project**
+#### Bước 3: Chạy ứng dụng
 
-Tạo một project Java.
+**Khởi động Server:**
+```bash
+java Truyen-file-qua-tcp.Server
+```
+- Server sẽ khởi động trên ip (127.0.0.1) và port (4000) mặc định 
+- Giao diện server sẽ hiển thị, sẵn sàng nhận kết nối từ client
 
-Tạo package: Giao_Thuc_TCP.
+**Khởi động Client:**
+```bash
+java Truyen-file-qua-tcp.ClientA
+java Truyen-file-qua-tcp.ClientB
+```
+- Nhập địa chỉ trên 2 Client để kết nối với Server
+- Client sẽ kết nối đến Server và log của Server sẽ hiện kết nối của từng Client
 
-Thêm 3 file Java vào package:
+### 🚀 Sử dụng ứng dụng
 
-Server.java
-
-ClientA.java
-
-ClientB.java
-
-**Bước 3: Gõ code**
-
-Copy code Server.java.
-
-Copy code ClientA.java.
-
-Copy code ClientB.java.
-
- Sau đó Build Project để IDE biên dịch.
-
-**Bước 4: Chạy chương trình**
-
-Thứ tự chạy:
-
--Chạy Server trước
-
--Nhập IP: 127.0.0.1 (hoặc IP LAN nếu chạy nhiều máy).
-
-Port: 4000 (hoặc số khác bạn set).
-
--Bấm Start Server.
-
--Log hiển thị: Server đang chạy trên địa chỉ: 127.0.0.1; cổng: 4000.
-
--Chạy ClientA
-
--Nhập IP server (mặc định 127.0.0.1).
-
--Port: 4000.
-
--Bấm Kết nối Server.
-
--Chạy ClientB (tương tự ClientA).
-
-**Bước 5: Gửi file**
-
-Trên ClientA:
-
--Bấm Chọn File → chọn file bất kỳ.
-
--Bấm Gửi File → log hiển thị: Đã gửi file: tên_file ....
-
--Trên ClientB → log hiển thị: Đã nhận file từ server: tên_file ....
-
--File sẽ được lưu vào thư mục Files_ClientB.
-
--Ngược lại, nếu gửi từ ClientB thì ClientA sẽ nhận được file.
-
-**Kết quả**
-
-Server log:
-
-ClientA gửi file tới ClientB thành công
-
-hoặc
-
-ClientB gửi file tới ClientA thành công
+1. **Kết nối**: Client kết nối đến Server sau khi nhập địa chỉ và nhấn kết nối
+2. **Chọn file**: Mở và chọn file để gửi
+3. **Gửi File**: Sau khi đã chọn file ta nhấn "Gửi File"
+4. **Nhận File**: Khi đã nhận file client còn lại sẽ nhận được file và thông báo đã nhận được
+5. **Lưu File**: 2 Client sau khi nhận file sẽ lưu vào thu mục đã chỉ định sẵn
+6. **Ngắt kết nối**: Đóng cửa sổ client hoặc nhấn Ctrl+C để ngắt kết nối
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
