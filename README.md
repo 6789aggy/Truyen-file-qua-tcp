@@ -120,8 +120,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 2. **Tải mã nguồn**: Sao chép thư mục `Truyen-file-qua-tcp` chứa các file:
    - `Server.java`
-   - `ClientA.java`
-   - `ClientB.java`
+   - `Client.java`
 
 #### Bước 2: Biên dịch mã nguồn
 1. **Mở terminal** và điều hướng đến thư mục chứa mã nguồn
@@ -132,8 +131,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
    Hoặc biên dịch từng file riêng lẻ:
    ```bash
    javac Truyen-file-qua-tcp/Server.java
-   javac Truyen-file-qua-tcp/ClientA.java
-   javac Truyen-file-qua-tcp/ClientB.java
+   javac Truyen-file-qua-tcp/Client.java
    ```
 
 3. **Kiểm tra kết quả**: Nếu biên dịch thành công, sẽ tạo ra các file `.class` tương ứng.
@@ -149,8 +147,7 @@ java Truyen-file-qua-tcp.Server
 
 **Khởi động Client:**
 ```bash
-java Truyen-file-qua-tcp.ClientA
-java Truyen-file-qua-tcp.ClientB
+java Truyen-file-qua-tcp.Client
 ```
 - Nhập địa chỉ trên 2 Client để kết nối với Server
 - Client sẽ kết nối đến Server và log của Server sẽ hiện kết nối của từng Client
@@ -161,7 +158,7 @@ java Truyen-file-qua-tcp.ClientB
 2. **Chọn file**: Mở và chọn file để gửi
 3. **Gửi File**: Sau khi đã chọn file ta nhấn "Gửi File"
 4. **Nhận File**: Khi đã nhận file client còn lại sẽ nhận được file và thông báo đã nhận được
-5. **Lưu File**: 2 Client sau khi nhận file sẽ lưu vào thu mục đã chỉ định sẵn
+5. **Lưu File**: Client sau khi nhận file sẽ lưu vào thu mục đã chỉ định sẵn
 6. **Ngắt kết nối**: Đóng cửa sổ client hoặc nhấn Ctrl+C để ngắt kết nối
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
