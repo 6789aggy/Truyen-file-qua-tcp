@@ -110,7 +110,84 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 ## 📝 4. Các bước cài đặt
 
+**1 Chuẩn bị môi trường**
 
+**Cài Java JDK**.
+
+java -version
+javac -version
+
+**2 Tạo Project**
+
+Tạo một project Java.
+
+Tạo package: Giao_Thuc_TCP.
+
+Thêm 3 file Java vào package:
+
+Server.java
+
+ClientA.java
+
+ClientB.java
+
+**3 Gõ code**
+
+Copy code Server.java.
+
+Copy code ClientA.java.
+
+Copy code ClientB.java.
+
+ Sau đó Build Project để IDE biên dịch.
+
+**4 Chạy chương trình**
+
+Thứ tự chạy:
+
+-Chạy Server trước
+
+-Nhập IP: 127.0.0.1 (hoặc IP LAN nếu chạy nhiều máy).
+
+Port: 4000 (hoặc số khác bạn set).
+
+-Bấm Start Server.
+
+-Log hiển thị: Server đang chạy trên địa chỉ: 127.0.0.1; cổng: 4000.
+
+-Chạy ClientA
+
+-Nhập IP server (mặc định 127.0.0.1).
+
+-Port: 4000.
+
+-Bấm Kết nối Server.
+
+-Chạy ClientB (tương tự ClientA).
+
+**5 Gửi file**
+
+Trên ClientA:
+
+-Bấm Chọn File → chọn file bất kỳ.
+
+-Bấm Gửi File → log hiển thị: Đã gửi file: tên_file ....
+
+-Trên ClientB → log hiển thị: Đã nhận file từ server: tên_file ....
+
+-File sẽ được lưu vào thư mục Files_ClientB.
+
+-Ngược lại, nếu gửi từ ClientB thì ClientA sẽ nhận được file.
+
+**6 Kết quả mong đợi**
+
+Server log:
+
+ClientA gửi file tới ClientB thành công
+
+hoặc
+
+ClientB gửi file tới ClientA thành công
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
