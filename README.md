@@ -81,7 +81,7 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 </p>
 
 <p align="center">
-  <img src="docs/Connect.png.png" alt="Ảnh 4" width="500"/>
+  <img src="docs/Connect.png" alt="Ảnh 4" width="500"/>
 </p>
 <p align="center">
   <em>Hình 4: Giao diện khi Server đã chạy và các Client đã kết nối  </em>
