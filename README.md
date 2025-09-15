@@ -37,13 +37,16 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 ## 🛠️ 2. Công nghệ sử dụng
 
 **Ngôn ngữ lập trình**: Java
-**Sử dụng giao thức truyền file TCP**
+
+**Giao thức**: TCP,TCP Socket
+
+**Công nghệ giao diện**: Java Swing
 
 **Thư viện**:
 
 -java.net 
 
--java.io (File I/O, DataInputStream, DataOutputStream)
+-java.io 
 
 **Công cụ phát triển**: Eclipse IDE
 
