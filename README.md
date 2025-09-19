@@ -162,7 +162,7 @@ java Truyen-file-qua-tcp.Server
 java Truyen-file-qua-tcp.Client
 ```
 - Chạy 2 lần để hiện 2 cửa sổ Client.
-= Nhập tên cho từng Client.
+- Nhập tên cho từng Client.
 - Nhấn kết nối trên Client để kết nối với Server
 - Client sẽ kết nối đến Server và log của Server sẽ hiện kết nối của từng Client
 
