@@ -36,11 +36,11 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 ## 🛠️ 2. Công nghệ sử dụng
 
-**Ngôn ngữ lập trình**: Java
+**Ngôn ngữ lập trình**: [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 
 **Giao thức**: TCP,TCP Socket
 
-**Công nghệ giao diện**: Java Swing
+**Công nghệ giao diện**: [![Swing](https://img.shields.io/badge/Java%20Swing-5382a1?style=for-the-badge&logo=java&logoColor=white)]()
 
 **Thư viện**:
 
