@@ -67,45 +67,57 @@ TCP là giao thức hướng kết nối, đảm bảo tính tin cậy, toàn v�
 
 
 <p align="center">
-  <img src="docs/ClientA.png" alt="Ảnh 2" width="500"/>
+  <img src="docs/Client.png" alt="Ảnh 2" width="500"/>
 </p>
 <p align="center">
-  <em>Hình 2: Giao diện Client A  </em>
+  <em>Hình 2: Giao diện Client </em>
 </p><p align="center">
 
 
-  <img src="docs/ClientB.png" alt="Ảnh 3" width="500"/>
+<p align="center">
+  <img src="docs/Run_Server.png" alt="Ảnh 3" width="500"/>
 </p>
 <p align="center">
-  <em>Hình 3: Giao diện Client B  </em>
+  <em>Hình 3: Giao diện khi Server đang chạy</em>
+</p>
+
+
+<p align="center">
+  <img src="docs/Server-Client.png" alt="Ảnh 4" width="500"/>
+</p>
+<p align="center">
+  <em>Hình 4: Client khi đã kết nối đến Server  </em>
+</p>
+
+
+<p align="center">
+  <img src="docs/Chose_file.png" alt="Ảnh 5" width="500"/>
+</p>
+<p align="center">
+  <em>Hình 5: Giao diện khi nhấn nút chọn file  </em>
 </p>
 
 <p align="center">
-  <img src="docs/Connect.png" alt="Ảnh 4" width="500"/>
+  <img src="docs/Sendfile.png" alt="Ảnh 6" width="500"/>
 </p>
 <p align="center">
-  <em>Hình 4: Giao diện khi Server đã chạy và các Client đã kết nối  </em>
-</p>
-
-<p align="center">
-  <img src="docs/ChoseFile.png" alt="Ảnh 5" width="500"/>
-</p>
-<p align="center">
-  <em>Hình 5: Giao diện Khi chọn File  </em>
+  <em>Hình 6: Chức năng gửi file   </em>
 </p>
 
-<p align="center">
-  <img src="docs/Received.png" alt="Ảnh 6" width="500"/>
-</p>
-<p align="center">
-  <em>Hình 6: Giao diện khi gửi File  </em>
-</p>
 
 <p align="center">
-  <img src="docs/StopServer.png" alt="Ảnh 1" width="500"/>
+  <img src="docs/Openfile.png" alt="Ảnh 7" width="500"/>
 </p>
 <p align="center">
-  <em>Hình 7: Giao diện khi dừng Server  </em>
+  <em>Hình 7: Chức năng mở thử mục lưu file  </em>
+</p>
+
+
+<p align="center">
+  <img src="docs/Server_stop.png" alt="Ảnh 8" width="500"/>
+</p>
+<p align="center">
+  <em>Hình 8: Ngắt kết nối Server  </em>
 </p>
 
 ## 📝 4. Các bước cài đặt
@@ -149,17 +161,20 @@ java Truyen-file-qua-tcp.Server
 ```bash
 java Truyen-file-qua-tcp.Client
 ```
-- Nhập địa chỉ trên 2 Client để kết nối với Server
+- Chạy 2 lần để hiện 2 cửa sổ Client.
+= Nhập tên cho từng Client.
+- Nhấn kết nối trên Client để kết nối với Server
 - Client sẽ kết nối đến Server và log của Server sẽ hiện kết nối của từng Client
 
 ### 🚀 Sử dụng ứng dụng
 
-1. **Kết nối**: Client kết nối đến Server sau khi nhập địa chỉ và nhấn kết nối
+1. **Kết nối**: Client kết nối đến Server sau khi Server start và Client nhấn kết nối
 2. **Chọn file**: Mở và chọn file để gửi
 3. **Gửi File**: Sau khi đã chọn file ta nhấn "Gửi File"
 4. **Nhận File**: Khi đã nhận file client còn lại sẽ nhận được file và thông báo đã nhận được
 5. **Lưu File**: Client sau khi nhận file sẽ lưu vào thu mục đã chỉ định sẵn
-6. **Ngắt kết nối**: Đóng cửa sổ client hoặc nhấn Ctrl+C để ngắt kết nối
+6. **Mở File**: Sau khi đã nhận file ta nhấn mở thử mục lưu file ta sẽ thấy file được lưu ở đó.
+7. **Ngắt kết nối**: Đóng cửa sổ hoặc nhấn Ctrl+C để ngắt kết nối
 
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
