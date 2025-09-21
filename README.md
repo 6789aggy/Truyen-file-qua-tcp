@@ -176,6 +176,11 @@ java Truyen-file-qua-tcp.Client
 6. **Mở File**: Sau khi đã nhận file ta nhấn mở thử mục lưu file ta sẽ thấy file được lưu ở đó.
 7. **Ngắt kết nối**: Đóng cửa sổ hoặc nhấn Ctrl+C để ngắt kết nối
 
+## 📬 5. Liên hệ
+- Họ tên: Lò Đức Mạnh
+- Lớp: CNTT 16-03
+- SDT: 0364987004
+  
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
 
 ---
