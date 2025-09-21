@@ -179,7 +179,7 @@ java Truyen-file-qua-tcp.Client
 ## 📬 5. Liên hệ
 - Họ tên: Lò Đức Mạnh
 - Lớp: CNTT 16-03
-- SDT: 0364987004
+- SDT: 0364987004.
 - Email: manh23012004@gmail.com.
   
 © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
